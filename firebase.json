@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "find-your-soul",
+    "site": "find-book",
     "public": "build",
     "ignore": [
       "firebase.json",
