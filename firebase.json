@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "find-books",
     "public": "build",
     "ignore": [
       "firebase.json",
