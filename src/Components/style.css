@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,600;6..96,700;6..96,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Bodoni Moda', serif;    
+    transition: transform .2s ease-in-out;
+}
+
+*::selection{
+    background: var(--secondaryColor);
+    color: var(--forthColor);
+}
+
+html{
+    font-size: 75.5%;
+}
+
+body{
+    overflow-x: hidden;
+    background: url(../images/bg4.jpg),var(--thirdColor);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    color: white;
+}
+
+:root{
+    --primaryColor: #4A403A;
+    --secondaryColor: #26211e;
+    --thirdColor: #9c9c9c;
+    --forthColor: #ff9100;
+}
+
+span{
+    color:var(--forthColor) ;
+}
+
+
+/* header section starts */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 10px 20px 10px rgb(0, 0, 0);
+    height: 400px;
+    background: url(../images/bg-3.jpg),var(--thirdColor);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.header .search{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.header input{
+    width: 300px;
+    height: 30px;
+    margin: 5px 0px 0px 0px;
+    outline: none;
+    border: none;
+    font-size: 23px;
+}
+
+.header i{
+    height: 30px;
+    width: 25px;
+    font-size: 20px;
+    color: var(--forthColor);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: white;
+}
+ /* header section ends */
+
+ 
+/* card section starts */
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: var(--primaryColor);
+    box-shadow: 5px 10px 10px rgb(0, 0, 0);
+    border-radius: 15px;
+    width: 200px;
+    /* height: auto; */
+    height: 350px;
+    margin: 15px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: fill;
+    border-radius: 15px;
+}
+
+.card h4, p{
+    display: flex;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    margin: 3px 0px;
+    
+}
+
+.card h4{
+    font-size: 15px;
+}
+
+.card p{
+    font-size: 13px;
+    background: var(--secondaryColor);
+}
+/* card section ends */
+
+
+/* footer section starts */
+.Footer-absolute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.Footer-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit{
+    text-align: center;
+    width: 80%;
+    border-top: 3px solid var(--thirdColor);
+    margin-top: 30px;
+    padding: 15px 0px;
+    font-size: 20px;
+}
+
+.credit span:hover{
+    color: #000000;
+}
+/* footer section ends */
+
+
+
